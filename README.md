@@ -1,0 +1,1 @@
+# disable-author-archive-redirection
