@@ -1,5 +1,5 @@
 === Disable Author Archive Redirection ===
-Contributors: Kimiya Kitani
+Contributors: kimipooh
 Tags: author,security
 Requires at least: 4.0
 Tested up to: 5.3.2
