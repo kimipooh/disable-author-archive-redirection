@@ -15,7 +15,7 @@ WordPress redirects /?author=(number) to /author/(userID) if the author id exist
 
 If you can control the configuration of a web server, you had better use the rewrite rule (Search as "Block Author URLs") for reducing  the system load of WordPress. 
 
-The plugin prevents the security vulnerability by forcibly redirecting /?author=(number) to / (the home of the website) except the admin dashboard.
+The plugin prevents the security vulnerability the author archive redirection.
 
 Detailed Behavior
 1. It isn't applied in the admin dashboard.
