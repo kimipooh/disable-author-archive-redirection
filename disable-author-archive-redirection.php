@@ -12,13 +12,28 @@ Domain Path: /languages
 
 // Prevent the security vulnerability: http://www.securityspace.com/smysecure/catid.html?id=1.3.6.1.4.1.25623.1.0.103222
 
-function disable_author_archive_redirection() {
-    // If ?author=, or /author/** except the admin dashboard in "REQUEST_URI", forcibly redirect to the home. 
-    if(!is_admin()):
-        if (isset($_REQUEST['author'])  || preg_match('#/author/.+#', $_SERVER['REQUEST_URI'])):
-            wp_redirect(home_url());
-            exit;
-        endif;
-    endif;
+// Reference: https://m0n.co/enum
+
+if (!is_admin()):
+	if (preg_match('/author=([0-9]*)/i', $_SERVER['QUERY_STRING'])):
+		http_response_code(404);
+		die();
+	elseif (preg_match('#/author/.*#i', $_SERVER['REQUEST_URI'])):
+		header('Location: '. home_url());
+		exit;
+	endif;
+	add_filter('redirect_canonical', 'disable_author_archive_redirection', 10, 2);
+endif;
+
+function disable_author_archive_redirection($redirect, $request) {
+	if (preg_match('/author=([0-9]*)/i', $_SERVER['QUERY_STRING'])):
+		http_response_code(404);
+		die();
+	elseif (preg_match('#/author/.*#i', $_SERVER['REQUEST_URI'])):
+		wp_redirect(home_url());
+		exit;
+	else:
+		return $redirect;
+	endif;
+	
 }
-add_action('init', 'disable_author_archive_redirection');
