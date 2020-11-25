@@ -2,7 +2,7 @@
 /**
  * Class SampleTest
  *
- * @package Disable_Author_Archive_Redirection
+ * @package Cf7_Add_Password_Field
  */
 
 /**
