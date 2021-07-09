@@ -2,7 +2,7 @@
 Contributors: kimipooh
 Tags: author,security
 Requires at least: 4.0
-Tested up to: 5.6
+Tested up to: 5.8
 Requires PHP: 5.6
 Stable tag: 2.0
 License: GPL v2
@@ -37,6 +37,7 @@ Please install this plugin and activate it.
 * Supported the multisite.
 * Added the setting menu. 
 * Tested up 5.6 with PHP 7.4
+* Tested up 5.8
 
 = 1.0 =
 * First Released.
