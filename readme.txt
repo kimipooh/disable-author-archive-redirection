@@ -1,8 +1,8 @@
 === Disable Author Archive Redirection ===
 Contributors: kimipooh
 Tags: author,security
-Requires at least: 4.0
-Tested up to: 6.0
+Requires at least: 5.4
+Tested up to: 6.1
 Requires PHP: 5.6
 Stable tag: 2.0
 License: GPL v2
@@ -39,6 +39,8 @@ Please install this plugin and activate it.
 * Tested up 5.6 with PHP 7.4
 * Tested up 5.8
 * Tested up 6.0
+* Tested up to 6.1
+* Changed the supported version of WordPress from 4.0 to 5.4 or higher.
 
 = 1.0 =
 * First Released.
