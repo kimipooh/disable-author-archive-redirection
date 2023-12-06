@@ -3,7 +3,7 @@
 Plugin Name: Disable Author Archive Redirection
 Plugin URI: 
 Description: The plugin disables the author archive redirection.
-Version: 2.0
+Version: 2.1
 Author: Kimiya Kitani
 Author URI: https://profiles.wordpress.org/kimipooh/
 Text Domain: disable-author-archive-redirection
@@ -47,7 +47,7 @@ if(isset($settings['disable_author_archive']) && $settings['disable_author_archi
 
 // Reference: https://m0n.co/enum
 if (!is_admin() || (isset($settings['disable_except_admin_dashboard']) && $settings['disable_except_admin_dashboard'] === 'yes')):
-	if (preg_match('/author=([0-9]*)/i', $_SERVER['QUERY_STRING'])):
+	if (isset($_SERVER['QUERY_STRING']) && preg_match('/author=([0-9]*)/i', $_SERVER['QUERY_STRING'])):
 		error_404();
 	elseif (preg_match('#/author/.*#i', $_SERVER['REQUEST_URI'])):
 		if($disable_author_archive === false):
@@ -87,7 +87,7 @@ function daar_disable_author_archive_redirection($redirect, $request) {
 	$disable_author_archive = false;
 	if(isset($settings['disable_author_archive']) && $settings['disable_author_archive'] === 'yes')
 		$disable_author_archive = true;
-	if (preg_match('/author=([0-9]*)/i', $_SERVER['QUERY_STRING'])):
+	if (isset($_SERVER['QUERY_STRING']) && preg_match('/author=([0-9]*)/i', $_SERVER['QUERY_STRING'])):
 		error_404();
 	elseif (preg_match('#/author/.*#i', $_SERVER['REQUEST_URI'])):
 		if($disable_author_archive === false):

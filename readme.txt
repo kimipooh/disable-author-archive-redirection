@@ -1,10 +1,10 @@
 === Disable Author Archive Redirection ===
 Contributors: kimipooh
 Tags: author,security
-Requires at least: 5.4
-Tested up to: 6.1
+Requires at least: 4.0
+Tested up to: 6.4.1
 Requires PHP: 5.6
-Stable tag: 2.0
+Stable tag: 2.1
 License: GPL v2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,14 +33,15 @@ Please install this plugin and activate it.
 
 == Changelog ==
 
+= 2.1 =
+* Fixed the problem with a warning message when using WP-CLI.
+
 = 2.0 =
 * Supported the multisite.
 * Added the setting menu. 
 * Tested up 5.6 with PHP 7.4
 * Tested up 5.8
 * Tested up 6.0
-* Tested up to 6.1
-* Changed the supported version of WordPress from 4.0 to 5.4 or higher.
 
 = 1.0 =
 * First Released.
