@@ -1,9 +1,9 @@
 === Disable Author Archive Redirection ===
 Contributors: kimipooh
 Tags: author,security
-Requires at least: 4.0
+Requires at least: 6.0
 Tested up to: 6.4.1
-Requires PHP: 5.6
+Requires PHP: 7.4
 Stable tag: 2.1
 License: GPL v2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
