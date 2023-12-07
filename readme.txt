@@ -4,7 +4,7 @@ Tags: author,security
 Requires at least: 6.0
 Tested up to: 6.4.1
 Requires PHP: 7.4
-Stable tag: 2.1
+Stable tag: 2.1.1
 License: GPL v2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,9 @@ Please install this plugin and activate it.
 
 
 == Changelog ==
+
+= 2.1.1 =
+* Fixed a problem with missing include files.
 
 = 2.1 =
 * Fixed the problem with a warning message when using WP-CLI.
