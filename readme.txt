@@ -34,7 +34,7 @@ Please install this plugin and activate it.
 == Changelog ==
 
 = 2.1.1 =
-* Fixed a problem with missing include files.
+* Fixed a problem that the “include" folder had not been uploaded. If your site is not working due to the plugin, please remove the plugin via FTP and reinstall it again.
 
 = 2.1 =
 * Fixed the problem with a warning message when using WP-CLI.
