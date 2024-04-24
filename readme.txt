@@ -2,7 +2,7 @@
 Contributors: kimipooh
 Tags: author,security
 Requires at least: 6.0
-Tested up to: 6.4.1
+Tested up to: 6.5.2
 Requires PHP: 7.4
 Stable tag: 2.1.1
 License: GPL v2
@@ -35,6 +35,7 @@ Please install this plugin and activate it.
 
 = 2.1.1 =
 * Fixed a problem that the “include" folder had not been uploaded. If your site is not working due to the plugin, please remove the plugin via FTP and reinstall it again.
+* Tested up 6.5.2 with PHP 8.3.6
 
 = 2.1 =
 * Fixed the problem with a warning message when using WP-CLI.
