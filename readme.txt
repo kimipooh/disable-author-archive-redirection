@@ -2,9 +2,9 @@
 Contributors: kimipooh
 Tags: author,security
 Requires at least: 6.0
-Tested up to: 6.5.2
-Requires PHP: 7.4
-Stable tag: 2.1.1
+Tested up to: 6.7.2
+Requires PHP: 8.0
+Stable tag: 2.1.2
 License: GPL v2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,9 @@ Please install this plugin and activate it.
 
 
 == Changelog ==
+
+= 2.1.2 =
+* Tested up 6.7.2 with PHP 8.3.19 and 8.4.5.
 
 = 2.1.1 =
 * Fixed a problem that the “include" folder had not been uploaded. If your site is not working due to the plugin, please remove the plugin via FTP and reinstall it again.
